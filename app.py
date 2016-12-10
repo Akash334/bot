@@ -40,35 +40,39 @@ def webhook():
     speech = "Here are some properties with your choice:"
     print("Response:")
     print(speech)
-    message={
-    "attachment":{
-      "type":"template",
-      "payload":{
-        "template_type":"generic",
-        "elements":[
-          {
-            "title":"Welcome to Peter\'s Hats",
-            "item_url":"https://petersfancybrownhats.com",
-            "image_url":"https://petersfancybrownhats.com/company_image.png",
-            "subtitle":"We\'ve got the right hat for everyone.",
-            "buttons":[
-              {
-                "type":"web_url",
-                "url":"https://petersfancybrownhats.com",
-                "title":"View Website"
-              },
-              {
-                "type":"postback",
-                "title":"Start Chatting",
-                "payload":"DEVELOPER_DEFINED_PAYLOAD"
-              }              
-            ]
-          }
-        ]
+     message= {
+         "attachment": {
+           "type": "template",
+             "payload": {
+               "template_type": "generic",
+               "elements": [{
+               "title": "Blah blah",
+               "subtitle": "123123",
+               "item_url": "http://www.aarz.pk/property-detail?id=1",               
+               "image_url": "http://www.aarz.pk/assets/images/properties/1/1.actual.1.jpg" ,
+                "buttons": [{
+                "type": "web_url",
+                "url": "www.aarz.pk",
+                "title": "Open Web URL"
+            }, 
+                   ],
+          }, 
+                   {
+                "title": "hello",
+                "subtitle": "world",
+                "item_url":  "http://www.aarz.pk/property-detail?id=2",               
+                "image_url": "http://www.aarz.pk/assets/images/properties/2/2.actual.1.jpg",
+                "buttons": [{
+                "type": "web_url",
+                "url": "www.aarz.pk",
+                "title": "Open Web URL"
+            },
+                   ]
+          }]
+        }
       }
     }
-  }
-
+    
     return {
         "speech": speech,
         "displayText": speech,
