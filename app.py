@@ -30,29 +30,37 @@ def webhook():
     return r
 
 
-def processIntentName(req):
-    result = req.get("result")
-    parameters = result.get("metadata")
-    intent = parameters.get("intentName")
-    return intent
+#def processIntentName(req):
+ #   result = req.get("result")
+  #  parameters = result.get("metadata")
+   # intent = parameters.get("intentName")
+    #return intent
 
 
     speech = "Here are some properties with your choice:"
     print("Response:")
     print(speech)
-       "message":{
+    message={
     "attachment":{
       "type":"template",
       "payload":{
         "template_type":"generic",
         "elements":[
           {
+            "title":"Welcome to Peter\'s Hats",
+            "item_url":"https://petersfancybrownhats.com",
             "image_url":"https://petersfancybrownhats.com/company_image.png",
+            "subtitle":"We\'ve got the right hat for everyone.",
             "buttons":[
               {
                 "type":"web_url",
                 "url":"https://petersfancybrownhats.com",
-                "title":"Get Real"
+                "title":"View Website"
+              },
+              {
+                "type":"postback",
+                "title":"Start Chatting",
+                "payload":"DEVELOPER_DEFINED_PAYLOAD"
               }              
             ]
           }
