@@ -37,7 +37,7 @@ def processIntentName(req):
     return intent
 
 
-    speech = "Here are some properties with your choice:
+    speech = "Here are some properties with your choice:"
     print("Response:")
     print(speech)
        "message":{
