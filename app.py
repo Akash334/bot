@@ -52,7 +52,7 @@ def makeWebhookResult(data):
             "payload":{
               "template_type":"generic",
               "elements":[{
-              "title":"A QUESTION GAME TO GO DEEPER",
+              "title":"",
               "item_url":"https://aarz.pk/",
               "image_url":"https://www.aarz.pk/assets/images/properties/8666/8666.actual.0.jpg",
               "buttons":[
