@@ -42,13 +42,14 @@ def processRequest(req):
 
 def makeWebhookResult(data):
 	
-	speech = 'This is the response from server.' + 'and' + data
-    	print 'Response:'
+	speech = "This is the response from server" + "and" + data
+    	print "Response:"
     	print speech
 
 	return
-	{'speech': speech,
-	 'displayText': speech
+	{"speech": speech,
+	 "displayText": speech,
+	 "data": {"facebook": message},
        	}
 
 
