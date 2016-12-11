@@ -52,21 +52,15 @@ def makeWebhookResult(data):
             "payload":{
               "template_type":"generic",
               "elements":[{
-              "title":"Welcome to Peter\'s Hats",
-              "item_url":"https://petersfancybrownhats.com",
-              "image_url":"https://petersfancybrownhats.com/company_image.png",
-              "subtitle":"We\'ve got the right hat for everyone.",
+              "title":"A QUESTION GAME TO GO DEEPER",
+              "item_url":"http://onelink.to/getreal",
+              "image_url":"http://androidtesting.netau.net/question1.jpg",
               "buttons":[
               {
                 "type":"web_url",
-                "url":"https://petersfancybrownhats.com",
-                "title":"View Website"
-              },
-              {
-                "type":"postback",
-                "title":"Start Chatting",
-                "payload":"DEVELOPER_DEFINED_PAYLOAD"
-              }              
+                "url":"http://onelink.to/getreal",
+                "title":"Get Real"
+              }            
             ]
           }
         ]
