@@ -35,7 +35,7 @@ def webhook():
 
 def processRequest(req):
     	if req.get('result').get('action') != 'yahooWeatherForecast':
-        return {}
+        	return {}
    	data = "this is the response from webhook"
     	res = makeWebhookResult(data)
     	return res
