@@ -36,19 +36,20 @@ def webhook():
 def processRequest(req):
     	if req.get('result').get('action') != 'yahooWeatherForecast':
         return {}
-    data = "this is the response from webhook"
+   	data = "this is the response from webhook"
     	res = makeWebhookResult(data)
     	return res
 
 def makeWebhookResult(data):
 	
-speech = 'This is the response from server.' + 'and' + data
-    print 'Response:'
+	speech = 'This is the response from server.' + 'and' + data
+    	print 'Response:'
     	print speech
 
-return {'speech': speech,
-	'displayText': speech
-       }
+	return
+	{'speech': speech,
+	 'displayText': speech
+       	}
 
 
         # "contextOut": [],
