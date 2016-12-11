@@ -45,16 +45,42 @@ def makeWebhookResult(data):
 	speech = "This is the response from server" + "and" + data
     	print "Response:"
     	print speech
-
-	return
-	{"speech": speech,
-	 "displayText": speech,
-	 "data": {"facebook": message},
-       	}
-
-
+	
+	message= {
+    	 "attachment":{
+      	   "type":"template",
+            "payload":{
+              "template_type":"generic",
+              "elements":[{
+              "title":"Welcome to Peter\'s Hats",
+              "item_url":"https://petersfancybrownhats.com",
+              "image_url":"https://petersfancybrownhats.com/company_image.png",
+              "subtitle":"We\'ve got the right hat for everyone.",
+              "buttons":[
+              {
+                "type":"web_url",
+                "url":"https://petersfancybrownhats.com",
+                "title":"View Website"
+              },
+              {
+                "type":"postback",
+                "title":"Start Chatting",
+                "payload":"DEVELOPER_DEFINED_PAYLOAD"
+              }              
+            ]
+          }
+        ]
+      }
+    }
+  }	
+	
+        return {
+        "speech": speech,
+        "displayText": speech,
+        "data": {"facebook": message},
         # "contextOut": [],
-        # "source": "apiai-weather-webhook-sample"
+        #"source": "apiai-weather-webhook-sample"
+  }
 
 if __name__ == '__main__':
         port = int(os.getenv('PORT', 5000))
@@ -62,5 +88,3 @@ if __name__ == '__main__':
         print 'Starting app on port %d' % port
 
         app.run(debug=False, port=port, host='0.0.0.0')
-
-			
