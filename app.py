@@ -53,20 +53,14 @@ def makeWebhookResult(data):
               "template_type":"generic",
               "elements":[{
               "title":"A QUESTION GAME TO GO DEEPER",
-              "item_url":"http://www.getreal.life/",
-              "image_url":"http://www.androidtesting.netau.net/question1.jpg",
-	      "subtitle":"We\'ve got the right hat for everyone.",
+              "item_url":"https://aarz.pk/",
+              "image_url":"https://www.aarz.pk/assets/images/properties/8666/8666.actual.0.jpg",
               "buttons":[
               {
                 "type":"web_url",
-                "url":"http://www.getreal.life/",
+                "url":"https://www.aarz.pk/",
                 "title":"Get Real"
-              },
-              {
-                "type":"postback",
-                "title":"Start Chatting",
-                "payload":"DEVELOPER_DEFINED_PAYLOAD"
-              }           
+              }
             ]
           }
         ]
