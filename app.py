@@ -45,28 +45,9 @@ def makeWebhookResult(data):
 speech = 'This is the response from server.' + 'and' + data
     print 'Response:'
     	print speech
-	
-        message = {'attachment': {'type': 'template',
-                   'payload': {'template_type': 'generic',
-                   'elements': [{
-            'title': "this is first",
-            'subtitle': "This is subtitle",
-            'item_url': 'http://www.aarz.pk/property-detail?id=1',
-            'image_url': 'http://www.aarz.pk/assets/images/properties/1/1.actual.1.jpg',
-            'buttons': [{'type': 'web_url', 'url': 'www.aarz.pk',
-                        'title': 'Open Web URL'}],
-            }, {
-            'title': "this is second",
-            'subtitle': "this is subtitle",
-            'item_url': 'http://www.aarz.pk/property-detail?id=2',
-            'image_url': 'http://www.aarz.pk/assets/images/properties/2/2.actual.1.jpg',
-            'buttons': [{'type': 'web_url', 'url': 'www.aarz.pk',
-                        'title': 'Open Web URL'}],
-            }]}}}
 
 return {'speech': speech,
-	'displayText': speech,
-        'data': {'facebook': message}
+	'displayText': speech
        }
 
 
