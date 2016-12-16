@@ -43,7 +43,7 @@ def processRequest(req):
 def makeWebhookResult(data):
 	number=randint(1,5)
 	charnumber='1'
-	speech = "This is the response from server" + "and" + number
+	speech = "This is the response from server" + "and" + str(number)
 	
 	message= {
     	 "attachment":{
