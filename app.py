@@ -53,7 +53,7 @@ def makeWebhookResult(data):
               "elements":[{
               "title":"A Game to Go Deeper",
               "item_url":"https://www.getreal.life/",
-              "image_url":"https://www.aarz.pk/bot/images/qus"+charnumber+".png",
+              "image_url":"https://www.aarz.pk/bot/images/qus"+str(number)+".png",
               "buttons":[
               {
                 "type":"web_url",
