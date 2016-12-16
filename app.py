@@ -41,7 +41,7 @@ def processRequest(req):
     	return res
 
 def makeWebhookResult(data):
-	number=1
+	number='1'
 	speech = "This is the response from server" + "and" + data
     	print "Response:"
     	print speech
