@@ -59,15 +59,15 @@ def makeWebhookResult(data):
               {
                 "type":"web_url",
                 "url":"https://www.getreal.life/",
-                "title":"Download"
+                "title":"Download App"
               },
 	     {
        	        "type":"element_share"
              },
 	     {
         	"type":"web_url",
-        	"url":"https://petersfancyapparel.com/classic_white_tshirt",
-        	"title":"50 Questions"
+        	"url":"https://www.mcssl.com/WebForms/WebForm.aspx?wid=d8e7fdb0-0d0f-42a4-879a-253afd43e69b",
+        	"title":"Download 50 Questions"
      	    }
             ]
           }
