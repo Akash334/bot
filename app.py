@@ -41,7 +41,7 @@ def processRequest(req):
     	return res
 
 def makeWebhookResult(data):
-	
+	number=1
 	speech = "This is the response from server" + "and" + data
     	print "Response:"
     	print speech
@@ -54,7 +54,7 @@ def makeWebhookResult(data):
               "elements":[{
               "title":"A Game to Go Deeper",
               "item_url":"https://www.getreal.life/",
-              "image_url":"https://www.dropbox.com/s/9dj0ef2cuuezn9w/question1.jpg?raw=1",
+              "image_url":"https://www.aarz.pk/bot/images/qus"+number+".png",
               "buttons":[
               {
                 "type":"web_url",
