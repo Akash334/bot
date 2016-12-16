@@ -9,7 +9,7 @@ import re
 from flask import Flask
 from flask import request
 from flask import make_response
-
+from random import randint
 # Flask app should start in global layout
 
 app = Flask(__name__)
@@ -41,10 +41,8 @@ def processRequest(req):
     	return res
 
 def makeWebhookResult(data):
-	number='1'
-	speech = "This is the response from server" + "and" + data
-    	print "Response:"
-    	print speech
+	number=randint(1,5)
+	speech = "This is the response from server" + "and" + number
 	
 	message= {
     	 "attachment":{
