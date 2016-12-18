@@ -41,7 +41,7 @@ def processRequest(req):
     	return res
 
 def makeWebhookResult(data):
-	number=randint(1,5)
+	number=randint(1,15)
 	charnumber='1'
 	speech = "This is the response from server" + "and" + str(number)
 	
@@ -52,7 +52,6 @@ def makeWebhookResult(data):
               "template_type":"generic",
               "elements":[{
               "title":"A Game to Go Deeper",
-              "item_url":"https://www.getreal.life/",
               "image_url":"https://www.aarz.pk/bot/images/qus"+str(number)+".png",
               "buttons":[
 	     {
