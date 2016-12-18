@@ -62,7 +62,7 @@ def makeWebhookResult(data):
           }
         ]
       }
-    }
+    },
 		"quick_replies": [
 			
             {
