@@ -55,24 +55,31 @@ def makeWebhookResult(data):
               "item_url":"https://www.getreal.life/",
               "image_url":"https://www.aarz.pk/bot/images/qus"+str(number)+".png",
               "buttons":[
-              {
-                "type":"web_url",
-                "url":"https://www.getreal.life/",
-                "title":"Download App"
-              },
 	     {
        	        "type":"element_share"
-             },
-	     {
-        	"type":"web_url",
-        	"url":"https://www.mcssl.com/WebForms/WebForm.aspx?wid=d8e7fdb0-0d0f-42a4-879a-253afd43e69b",
-        	"title":"Download 50 Questions"
-     	    }
+             }
             ]
           }
         ]
       }
     }
+	"quick_replies": [
+            {
+                "content_type":"text",
+                "title": "Ask Question",
+                "payload": "Ask Question"
+            },
+                 {
+                "content_type":"text",
+                "title": "Download App",
+                "payload": "Download App"
+            },
+                 {
+                "content_type":"text",
+                "title": "50 Power Questions",
+                "payload": "50 Power Questions"
+            }
+	]
   }	
 	
         return {
