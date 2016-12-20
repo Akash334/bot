@@ -51,7 +51,7 @@ def makeWebhookResult(data):
             "payload":{
               "template_type":"generic",
               "elements":[{
-              "title":"A Game to Go Deeper",
+              "title":"Get Real",
               "image_url":"https://www.aarz.pk/bot/images/qus"+str(number)+".png",
               "buttons":[
 	     {
