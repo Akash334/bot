@@ -52,7 +52,7 @@ def makeWebhookResult(data):
               "template_type":"generic",
               "elements":[{
               "title":"Get Real",
-              "image_url":"https://www.aarz.pk/bot/images/qus"+str(number)+".png",
+              "image_url":"https://www.getreal.life/images/qus"+str(number)+".png",
               "buttons":[
 	     {
        	        "type":"element_share"
