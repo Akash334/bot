@@ -44,9 +44,7 @@ def makeWebhookResult(data):
 	number=randint(1,15)
 	charnumber='1'
 	speech = "This is the response from server" + "and" + str(number)
-	text = {
-	"text":"Here is your question"
-	}
+	
 	message= {
     	 "attachment":{
       	   "type":"template",
@@ -92,8 +90,7 @@ def makeWebhookResult(data):
         return {
         "speech": speech,
         "displayText": speech,
-	"text": {"facebook": text},
-        "image": {"facebook": message}
+	"data": {"facebook": message}
         # "contextOut": [],
         #"source": "apiai-weather-webhook-sample"
   }
