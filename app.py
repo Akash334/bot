@@ -71,8 +71,8 @@ def makeWebhookResult(data):
             },
 	    	{
                 "content_type":"text",
-                "title": "Ask Me",
-                "payload": "Ask Me"
+                "title": "Ask Bot",
+                "payload": "Ask Bot"
             },
                  	{
                 "content_type":"text",
