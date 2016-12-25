@@ -44,7 +44,8 @@ def makeWebhookResult(data):
 	number=randint(1,15)
 	charnumber='1'
 	speech = "This is the response from server" + "and" + str(number)
-	print(speech);
+	print(speech)
+	print("Here is your question!")
 	message= {
     	 "attachment":{
       	   "type":"template",
