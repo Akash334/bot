@@ -84,7 +84,10 @@ def makeWebhookResult(data):
                 "content_type":"text",
                 "title": "50 Power Questions",
                 "payload": "50 Power Questions"
-            }
+            },
+				{
+        	"content_type":"location"
+      	    }
 	]
   }	
 	
